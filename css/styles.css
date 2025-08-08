@@ -1,0 +1,225 @@
+ :root {
+     --primary-green: #2e7d32;
+     --light-green: #81c784;
+     --dark-green: #1b5e20;
+     --accent-green: #a5d6a7;
+     --text-light: #f5f5f5;
+     --text-dark: #212121;
+ }
+
+ body {
+     font-family: 'Poppins', sans-serif;
+     color: var(--text-dark);
+     overflow-x: hidden;
+ }
+
+ .bg-primary-green {
+     background-color: var(--primary-green);
+ }
+
+ .bg-light-green {
+     background-color: var(--light-green);
+ }
+
+ .bg-dark-green {
+     background-color: var(--dark-green);
+ }
+
+ .text-primary-green {
+     color: var(--primary-green);
+ }
+
+ .btn-green {
+     background-color: var(--primary-green);
+     color: white;
+     border: none;
+     padding: 10px 25px;
+     font-weight: 500;
+     border-radius: 30px;
+ }
+
+ .btn-green:hover {
+     background-color: var(--dark-green);
+     color: white;
+     transform: translateY(-2px);
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+ }
+
+ .btn-outline-green {
+     border: 2px solid var(--primary-green);
+     color: var(--primary-green);
+     padding: 10px 25px;
+     font-weight: 500;
+     border-radius: 30px;
+ }
+
+ .btn-outline-green:hover {
+     background-color: var(--primary-green);
+     color: white;
+ }
+
+ .navbar {
+     transition: all 0.3s;
+     padding: 15px 0;
+ }
+
+ .navbar.scrolled {
+     background-color: var(--dark-green) !important;
+     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+     padding: 10px 0;
+ }
+
+ .hero-section {
+     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+     background-size: cover;
+     background-position: center;
+     color: white;
+     padding: 120px 0 100px;
+     text-align: center;
+ }
+
+ .hero-title {
+     font-size: 2.8rem;
+     font-weight: 700;
+     margin-bottom: 20px;
+ }
+
+ .hero-subtitle {
+     font-size: 1.2rem;
+     margin-bottom: 30px;
+     max-width: 700px;
+     margin-left: auto;
+     margin-right: auto;
+ }
+
+ .service-card {
+     border-radius: 10px;
+     overflow: hidden;
+     transition: all 0.3s;
+     border: none;
+     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+     margin-bottom: 20px;
+     height: 100%;
+ }
+
+ .service-card:hover {
+     transform: translateY(-10px);
+     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+ }
+
+ .service-icon {
+     font-size: 2.5rem;
+     color: var(--primary-green);
+     margin-bottom: 20px;
+ }
+
+ .section-title {
+     font-weight: 700;
+     margin-bottom: 50px;
+     position: relative;
+     display: inline-block;
+ }
+
+ .section-title:after {
+     content: '';
+     position: absolute;
+     width: 50%;
+     height: 3px;
+     background-color: var(--primary-green);
+     bottom: -10px;
+     left: 25%;
+ }
+
+ .feature-box {
+     padding: 30px;
+     border-radius: 10px;
+     background-color: white;
+     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+     transition: all 0.3s;
+     height: 100%;
+ }
+
+ .feature-box:hover {
+     transform: translateY(-5px);
+     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+ }
+
+ .feature-icon {
+     font-size: 2rem;
+     color: var(--primary-green);
+     margin-bottom: 20px;
+ }
+
+ .testimonial-card {
+     background-color: white;
+     border-radius: 10px;
+     padding: 30px;
+     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+     margin: 15px;
+ }
+
+ .testimonial-img {
+     width: 80px;
+     height: 80px;
+     border-radius: 50%;
+     object-fit: cover;
+     border: 3px solid var(--primary-green);
+     margin-bottom: 20px;
+ }
+
+ .contact-info {
+     margin-bottom: 30px;
+ }
+
+ .contact-icon {
+     font-size: 1.5rem;
+     color: var(--primary-green);
+     margin-right: 15px;
+ }
+
+ footer {
+     background-color: var(--dark-green);
+     color: white;
+     padding: 50px 0 20px;
+ }
+
+ .footer-links a {
+     color: var(--accent-green);
+     text-decoration: none;
+     display: block;
+     margin-bottom: 10px;
+     transition: all 0.3s;
+ }
+
+ .footer-links a:hover {
+     color: white;
+     padding-left: 5px;
+ }
+
+ .social-icon {
+     display: inline-flex;
+     align-items: center;
+     justify-content: center;
+     width: 40px;
+     height: 40px;
+     border-radius: 50%;
+     background-color: rgba(255, 255, 255, 0.1);
+     color: white;
+     margin-right: 10px;
+     transition: all 0.3s;
+ }
+
+ .social-icon:hover {
+     background-color: var(--primary-green);
+     transform: translateY(-3px);
+ }
+
+ @media (max-width: 768px) {
+     .hero-title {
+         font-size: 2rem;
+     }
+
+     .hero-subtitle {
+         font-size: 1rem;
+     }
+ }
